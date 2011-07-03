@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  prg_cve_preg: MyString
+  prg_cve_subpreg: MyString
+  prg_gpo_op: MyString
+  prg_tipo: MyString
+  prg_tipo_oblig: MyString
+  prg_txt: MyString
+
+two:
+  prg_cve_preg: MyString
+  prg_cve_subpreg: MyString
+  prg_gpo_op: MyString
+  prg_tipo: MyString
+  prg_tipo_oblig: MyString
+  prg_txt: MyString

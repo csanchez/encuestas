@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  opc_gpo_op: MyString
+  opc_cve_op: MyString
+  opc_txt: MyString
+
+two:
+  opc_gpo_op: MyString
+  opc_cve_op: MyString
+  opc_txt: MyString

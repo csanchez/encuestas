@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  aspi_nombre: MyString
+  aspi_folio: MyString
+  aspi_fec_nac: MyString
+  aspi_sexo: MyString
+
+two:
+  aspi_nombre: MyString
+  aspi_folio: MyString
+  aspi_fec_nac: MyString
+  aspi_sexo: MyString

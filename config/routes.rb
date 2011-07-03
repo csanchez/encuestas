@@ -1,4 +1,11 @@
 Encuestas::Application.routes.draw do
+  get "cuestionario/index"
+
+  get "cuestionario/show"
+
+  get "respuestas/search"
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

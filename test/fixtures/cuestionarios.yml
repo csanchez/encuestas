@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cst_cve_cst: MyString
+  cst_txt: MyString
+  cst_sec: MyString
+  cst_gpo_preg: MyString
+
+two:
+  cst_cve_cst: MyString
+  cst_txt: MyString
+  cst_sec: MyString
+  cst_gpo_preg: MyString

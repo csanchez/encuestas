@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  sec_cve_cst: MyString
+  sec_cve_preg: MyString
+  sec_cve_sec: MyString
+
+two:
+  sec_cve_cst: MyString
+  sec_cve_preg: MyString
+  sec_cve_sec: MyString

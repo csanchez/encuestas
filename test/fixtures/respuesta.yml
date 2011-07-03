@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  resp_folio: MyString
+  resp_tipo_id: MyString
+  resp_cve_cst: MyString
+
+two:
+  resp_folio: MyString
+  resp_tipo_id: MyString
+  resp_cve_cst: MyString
