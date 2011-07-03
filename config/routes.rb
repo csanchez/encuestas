@@ -1,4 +1,11 @@
 Encuestas::Application.routes.draw do
+  
+  devise_for :aspirantes
+
+  get "cuestionario_csb/index"
+
+  get "cuestionario_csb/show"
+
   get "cuestionario/index"
 
   get "cuestionario/show"

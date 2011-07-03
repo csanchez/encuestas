@@ -5,7 +5,7 @@ gem 'rails', '3.0.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -30,6 +30,8 @@ group :development, :test do
 #   gem 'webrat'
   gem "erb2haml", "~> 0.1.2"
   gem "haml-rails", "~> 0.3.4"
+  gem 'sqlite3'
 end
 
 gem "haml", "~> 3.1.2"
+gem "devise", "~> 1.4.2"
