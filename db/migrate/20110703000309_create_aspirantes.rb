@@ -5,7 +5,8 @@ class CreateAspirantes < ActiveRecord::Migration
       t.string :aspi_folio
       t.string :aspi_fec_nac
       t.integer :aspi_sexo
-
+      t.string :aspi_periodo
+      
       t.timestamps
     end
   end

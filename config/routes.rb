@@ -1,16 +1,12 @@
 Encuestas::Application.routes.draw do
   
-  devise_for :aspirantes
 
-  get "cuestionario_csb/index"
+  namespace :aspirante do
+     resource :session , :only =>[:new, :create,:destroy]   
+   end
 
-  get "cuestionario_csb/show"
-
-  get "cuestionario/index"
-
-  get "cuestionario/show"
-
-  get "respuestas/search"
+   resource :cuestionario, :only =>[:show]
+  root :to => 'home#index'
   
 
   # The priority is based upon order of creation:

@@ -1,0 +1,4 @@
+= render :partial => 'cuestionario_cabezera', :locals => {:cuestionario => @cuestionarios.first}
+%table
+  = render :partial => 'cuestionario', :collection => @cuestionarios[1..@cuestionarios.size-1]
+= link_to "salir" ,aspirante_session_path, :method => :delete

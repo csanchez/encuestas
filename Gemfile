@@ -34,4 +34,3 @@ group :development, :test do
 end
 
 gem "haml", "~> 3.1.2"
-gem "devise", "~> 1.4.2"

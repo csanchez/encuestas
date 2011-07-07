@@ -1,0 +1,53 @@
+.titulosseccion{:align => 'center'}
+  %b
+    %u
+      IDENTIFICACION
+      %br
+      PARA ACCESAR TU HOJA DE DATOS ESTADISTICOS
+
+
+  - form_for @aspi, :url => {:action => :create} do |f|
+    %br
+    %br
+    %table{:cellspacing => "0", :cellpadding => "0", :width => "60%", :class => "estilotabla"}
+      %tr{:id => 'azulobscuro'}
+        %td{ :align => "right", :valign => "top"}
+          %b
+            Número de Comprobante:
+            %br
+            (en tu boleta credencial)
+        %td{:align => "left", :valign => "top", :colspan => "3"}
+          = f.text_field :aspi_folio
+      %tr{:id => 'azulobscuro'}
+        %td &nbsp;	
+        %td &nbsp;
+      %tr{:id => 'azulobscuro'}
+        %td{:align => "right", :valign =>"top"}
+          %b Fecha de Nacimiento:
+        %td{:align => "left", :valign => "top", :colspan => "3"}
+          = f.text_field :aspi_fec_nac
+          Día (2), Mes (2) yAño (4). 
+          %br
+          Ejemplo: 
+          %em 16011978.
+          = hidden_field_tag 'cst_cve' , 'CSB-08'
+          = hidden_field_tag 'concurso' , '1'
+          = hidden_field 'tipo_id','02'
+    %center
+      %span{:class => 'titulosseccion'}
+        %h4 Por favor verifica tus datos antes de enviarlos.
+    .vacio{:align => 'center'}
+      = f.submit 'Acceder'
+    %hr
+
+  %table{:border => "0", :width => "100%"}
+    %tr
+      %td{:width => "50%"}
+        .vacio{:align => "left"}
+          = link_to "http://www.dgae.unam.mx" do
+            = image_tag "/imagenes/principal.gif", :border => "0", :width => "57", :height => "55", :alt => "www.dgae.unam.mx"
+      %td{:width => "50%"}
+        .vacio{:align => "right"}
+          = link_to "https://registro.dgae.unam.mx/acceso/EncuestaPRB/index.html" do
+            = image_tag "/imagenes/regreso.gif", :border => "0", :width => "60", :height => "50", :alt => "Regresar" 
+

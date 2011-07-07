@@ -1,8 +1,22 @@
 class Aspirante < ActiveRecord::Base
-  # Include default devise modules. Others available are:
-  # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable
-
-  # Setup accessible (or protected) attributes for your model
-  attr_accessible :aspi_folio, :aspi_fec_nac, :aspi_nombre, :aspi_sexo
+  
+  def nombre
+    self.aspi_nombre.split('*')[2]
+  end
+  
+  def apellido_pat
+    self.aspi_nombre.split('*')[0]
+  end
+  
+  def apellido_mat
+    self.aspi_nombre.split('*')[1]
+  end
+  
+  def self.authenticate?(aspi_folio,aspi_fec_nac,periodo)
+    if Aspirante.exists?(:aspi_folio => aspi_folio, :aspi_fec_nac => aspi_fec_nac,:aspi_periodo => periodo)
+      return true
+    end
+    return false
+  end
+  
 end

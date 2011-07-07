@@ -1,0 +1,6 @@
+.pregunta
+	= pregunta.prg_txt
+	- if pregunta.prg_tipo=="01"
+		= select_tag 'pregunta', options_from_collection_for_select(pregunta.opciones,:opc_cve_op, :opc_txt)
+	- else
+		= select_tag 'pregunta', :multiple, options_from_collection_for_select(pregunta.opciones,:opc_cve_op, :opc_txt)

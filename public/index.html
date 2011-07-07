@@ -1,24 +1,162 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    
-  </head>
-  <body>
-    <div id='header'>Aqui van las imagenes</div>
-
-	<div id='encuestas'>
-		<ul>
-			<li>
-				<table>
-					<tr>
-						<td>Cuestionario egresados de licenciatura</td><td><form action='cuestionario_csb/index' ><input type='submit' value='Ingresar'></form></td>
-					</tr>
-				</table>
-			</li>
-		</ul>
-	</div>
-			
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>Acceso a Hojas de Datos Est&aacute;sticos</title>
+	<meta name='keywords content='UNAM''></meta>
+	<meta name='Description' content ='UNAM'></meta>
+	<link rel='shortcut icon' href='http://recursosweb.unam.mx/imagenes/favicon.ico' />
+	<link href='stylesheets/styles.css' rel ='stylesheet' type='text/css' />
+</head>
+<body>
+	<div id='main'>
+		<div id='header'>
+			<a href='http://www.unam.mx'>
+				<img src ='https://www.dgae.unam.mx/imgs/encabezado-unam.gif'>
+			</a>
+			<img src='https://www.dgae.unam.mx/imgs/stock/rotate.php'>
 		</div>
-  </body>
-</html>
+
+		<div id="container">
+			<div align="center">
+				<br>
+				<span id="titulosespeciales">
+					<strong>Acceso a Hoja de Datos Estadísticos</strong>
+				</span>
+			</div>
+			<br>
+			<div id="title">
+			</div>
+			<div id="tablita">
+				<br>
+				<!-- creamos un formulario con las opciones de conexion y lo mandamos a main -->
+				<table border="1">
+					<tbody><tr class="header_tr">
+						<form method="post" onsubmit="window.open('', 'popup', 'toolbar = no, menubar = no, scrollbars = yes')" target="popup" action="https://registro.dgae.unam.mx/cgi-bin/ENCUESTAS/encuesta_prb"></form>
+						<td>
+							<span><strong>Egresados</strong></span>
+						</td>
+						<td>
+							<input type="hidden" value="1" name="Estado">
+							<input type="hidden" value="EGL-09" name="cst">
+							<input type="hidden" value="0910" name="per"> 
+							<input type="hidden" value="01" name="tipo_id"> 
+							<input type="hidden" value="G" name="conc"> 
+							<input type="Submit" value="Entrar">
+						</td>  
+
+					</tr>
+					<tr class="header_tr">
+						<form method="post" onsubmit="window.open('', 'popup', 'toolbar = no, menubar = no, scrollbars = yes')" target="popup" action="https://registro.dgae.unam.mx/cgi-bin/ENCUESTAS/encuesta_prb"></form>
+						<td>
+							<span><strong>Opinión de Servicios de Bachillerato</strong></span>
+						</td>
+						<td>
+							<input type="hidden" value="1" name="Estado">
+							<input type="hidden" value="OSB-08" name="cst">
+							<input type="hidden" value="0910" name="per"> 
+							<input type="hidden" value="01" name="tipo_id">
+							<input type="hidden" value="3" name="conc"> 
+							<input type="Submit" value="Entrar">
+						</td>
+
+					</tr>
+					<tr class="header_tr">
+						<form method="post" onsubmit="window.open('', 'popup', 'toolbar = no, menubar = no, scrollbars = yes')" target="popup" action="https://registro.dgae.unam.mx/cgi-bin/ENCUESTAS/encuesta_prb"></form>
+						<td>
+							<span><strong>Opinión de Servicios de Licenciatura</strong></span>
+						</td>
+						<td>
+							<input type="hidden" value="1" name="Estado">
+							<input type="hidden" value="OSL-07" name="cst">
+							<input type="hidden" value="0910" name="per"> 
+							<input type="hidden" value="O" name="conc">
+							<input type="hidden" value="01" name="tipo_id">
+							<input type="Submit" value="Entrar">
+						</td>
+
+					</tr>
+					<tr class="header_tr"> 
+						<form method="post" onsubmit="window.open('', 'popup', 'toolbar = no, menubar = no, scrollbars = yes')" target="popup" action="https://registro.dgae.unam.mx/cgi-bin/ENCUESTAS/encuesta_prb"></form>
+						<td>
+							<span><strong>Ingreso de Programas de Becas</strong></span>
+						</td>
+						<td>
+							<input type="hidden" value="1" name="Estado">
+							<input type="hidden" value="BEC-09" name="cst">
+							<input type="hidden" value="0910" name="per"> 
+							<input type="hidden" value="V" name="conc">
+							<input type="hidden" value="01" name="tipo_id">
+							<input type="Submit" value="Entrar">
+						</td>
+
+					</tr> 
+					<tr class="header_tr"> 
+						<!-- <form action="https://132.248.205.142/cgi-bin/ENCUESTAS/encuesta_completa" -->
+							<form method="post" onsubmit="window.open('', 'popup', 'toolbar = no, menubar = no, scrollbars = yes')" target="popup" action="https://registro.dgae.unam.mx/cgi-bin/ENCUESTAS/encuesta_completa"></form>
+							<td>
+								<strong>Ingreso a Licenciatura por Concurso de Selección</strong>
+							</td>
+							<td>
+								<input type="hidden" value="1" name="Estado">
+								<input type="hidden" value="CSL-08" name="cst">
+								<input type="hidden" value="02" name="tipo_id">
+								<input type="hidden" value="1112" name="per"> 
+								<input type="hidden" value="1" name="conti">
+								<input type="hidden" value="1" name="conc">
+								<input type="Submit" value="Entrar">
+							</td>
+
+						</tr>
+						<tr class="header_tr"> 
+							<form method="post" onsubmit="window.open('', 'popup', 'toolbar = no, menubar = no, scrollbars = yes')" target="popup" action="https://registro.dgae.unam.mx/cgi-bin/ENCUESTAS/encuesta_prb"></form>
+							<td>
+								<strong>Ingreso a Licenciatura por Pase Reglamentado</strong>
+							</td>
+							<td>
+								<input type="hidden" value="1" name="Estado">
+								<input type="hidden" value="PR-08" name="cst">
+								<input type="hidden" value="1" name="conti">
+								<input type="hidden" value="01" name="tipo_id">
+								<input type="hidden" value="1112" name="per">
+								<input type="hidden" value="0" name="conc">
+								<input type="Submit" value="Entrar">
+							</td>
+
+						</tr>
+						<tr class="header_tr"> 
+							<form action='aspirante/session/new'>
+								<td>
+									<strong>Ingreso a Bachillerato por Concurso de Selección</strong>
+								</td>
+								<td>
+									<input type="submit" value="Entrar">
+								</td>
+							</form>  
+						</tr>
+						<tr class="header_tr"> 
+							<form method="post" onsubmit="window.open('', 'popup', 'toolbar = no, menubar = no, scrollbars = yes')" target="popup" action="https://registro.dgae.unam.mx/cgi-bin/ENCUESTAS/encuesta_prb"></form>
+							<td>
+								<strong>Género y Equidad</strong>
+							</td>
+							<td>
+								<input type="hidden" value="1" name="Estado">
+								<input type="hidden" value="TMP-10" name="cst">
+								<input type="hidden" value="1011" name="per">
+								<input type="hidden" value="P" name="conc">
+								<input type="Submit" value="Entrar">
+							</td>
+
+						</tr> 
+
+					</tbody>
+					</table>
+				</div>
+				<br>
+				<br>
+				<span>
+					<strong id="azul">Subdirección de Diseño de Proyectos.</strong>
+				</span>
+			</div>
+		</div>
+	
+	</body>
+	</html>

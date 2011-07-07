@@ -1,0 +1,154 @@
+body{
+margin: 0px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px
+background-color:#F2F8FE;
+margin-top:0;
+text-align:center;
+}
+
+a:visited{
+	text-decoration:none;
+}
+a:unvisited{
+	text-decoration:none;
+}
+
+
+#tabs #tablitas td{
+	text-align: center;
+}
+
+#tablita td{
+	//padding:4px;
+	text-align: left;
+}
+
+form#only_button{
+	height:10px;
+	display:inline;
+}
+#main{
+	margin:0 auto;
+        width:980px;
+}
+
+#header{
+	//float:left;
+	width:980px;
+}
+
+#header a img{
+ text-decoration:none;
+ border:0px;
+ width: 475px;
+}
+#header img{
+ height:103px; 
+ width:500px; 
+}
+
+
+
+#container{
+	background-color:#FFFFFF;
+	background-image: url(https://www.dgae.unam.mx/imgs/bg-sin-menu.jpg);
+	background-position:right top;
+	background-repeat:no-repeat;
+	border:1px solid #CCCCCC;
+	padding:3px;
+	margin-bottom:10px;
+	//float:left;
+}
+
+#titulosespeciales{
+	font-size: 16px;
+	//border-bottom:2px solid #2158A1;
+}
+
+#tablita{
+	padding-left:50px;
+	padding-right:50px;
+	text-align: left;
+}
+
+#tablita #submit{
+	 text-align:right;
+}
+
+#tablita #input{
+	 background-color:#E6E6E6;
+}
+
+table{
+	margin:auto;
+}
+
+button{
+	width:0.8cm;
+}
+
+#fragment-1 img{
+	height:0.35cm;
+}
+
+.header_tr{
+	background:  #044B89;
+	color: white;
+	//font-size:13.5px;
+	text-align:center;	
+} 
+
+#return{
+	margin:auto;
+	width:93%;
+	text-align:right;
+}
+#return img{
+border:0 none;
+
+}
+#title{
+	margin: auto; 
+	width: 370px;
+}
+
+#session{
+	//width:300px;
+	margin: auto;
+	text-align:left;
+}
+
+.tema{
+	border:dotted;
+	width:170px;
+	float:left;
+}
+.acierto{
+	
+	border:solid;
+	text-align:right;
+	width:150px;
+}
+
+
+#buttons{
+width: 150px;
+margin: auto;
+}
+
+
+
+#azul{
+	color: blue;
+}
+
+
+#nota {
+    text-align: center;
+}
+
+#tablota{
+	margin: 0px;
+	padding 1px;
+}

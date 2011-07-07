@@ -10,23 +10,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110703025332) do
+ActiveRecord::Schema.define(:version => 20110703001347) do
 
   create_table "aspirantes", :force => true do |t|
     t.string   "aspi_nombre"
     t.string   "aspi_folio"
     t.string   "aspi_fec_nac"
     t.integer  "aspi_sexo"
+    t.string   "aspi_periodo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "cuestionarios", :force => true do |t|
-    t.string   "cve_cst"
+    t.string   "cst_cve"
     t.string   "cst_pos"
     t.string   "cst_gpo_preg"
     t.string   "cst_txt"
-    t.string   "cst_sec"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -46,6 +46,8 @@ ActiveRecord::Schema.define(:version => 20110703025332) do
     t.string   "prg_tipo"
     t.string   "prg_tipo_oblig"
     t.string   "prg_txt"
+    t.string   "prg_ini"
+    t.string   "prg_fin"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -54,14 +56,22 @@ ActiveRecord::Schema.define(:version => 20110703025332) do
     t.string   "resp_folio"
     t.string   "resp_tipo_id"
     t.string   "resp_cve_cst"
+    t.string   "resp_concurso"
+    t.string   "resp_periodo"
+    t.string   "resp_cve_preg"
+    t.string   "resp_cve_subpreg"
+    t.string   "resp_cve_op"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "seccions", :force => true do |t|
-    t.string   "sec_cve_cst"
-    t.string   "sec_cve_preg"
-    t.string   "sec_cve_sec"
+    t.string   "cp_cst_cve"
+    t.string   "cp_cst_cve_preg"
+    t.string   "cp_cst_gpo_preg"
+    t.string   "cp_cst_num_preg"
+    t.string   "cp_pos"
+    t.integer  "cuestionario_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

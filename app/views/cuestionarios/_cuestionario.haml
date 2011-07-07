@@ -1,0 +1,36 @@
+%tr
+  %td{:width => "100%", :colspan => "3"}
+    .titulosseccion{:align => "center"}
+      %b 
+        = cuestionario.cst_txt
+
+%tr{:id => "azulobscuro"}
+  %td{:align => "center", :colspan => "2"}
+    %table{:border => "0"}
+      %tr{:id => "azulobscuro"}
+        %td{:width => "25%"}
+        %td{:width => "25%"} 
+          %b AP. PATERNO
+        %td{:width => "25%"} 
+          %b AP. MATERNO
+        %td{:width => "25%"}
+          %b NOMBRE(S)
+
+%tr{:id => "azulobscuro"}
+  %td{:align => "center", :colspan => "2"}
+    %table{:border => "0"}
+      %tr{:id => "azulobscuro"}
+        %td{:width => "25%"}
+          %b NOMBRE 
+        %td{:width => "25%"} 
+          %b
+            = session[:usuario].apellido_pat
+        %td{:width => "25%"} 
+          %b 
+            = session[:usuario].apellido_mat
+        %td{:width => "25%"}
+          %b
+            = session[:usuario].nombre
+
+
+= render :partial => 'seccion' , :collection => cuestionario.secciones
