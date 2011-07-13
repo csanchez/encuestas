@@ -27,10 +27,9 @@ gem 'rails', '3.0.9'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 group :development, :test do
-#   gem 'webrat'
+  #gem 'webrat'
   gem "erb2haml", "~> 0.1.2"
   gem "haml-rails", "~> 0.3.4"
   gem 'sqlite3'
 end
-
 gem "haml", "~> 3.1.2"

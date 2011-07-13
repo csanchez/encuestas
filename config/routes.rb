@@ -5,7 +5,8 @@ Encuestas::Application.routes.draw do
      resource :session , :only =>[:new, :create,:destroy]   
    end
 
-   resource :cuestionario, :only =>[:show]
+  resource :cuestionario, :only =>[:new,:edit]
+  resource :respuestas, :only =>[:create,:update]
   root :to => 'home#index'
   
 

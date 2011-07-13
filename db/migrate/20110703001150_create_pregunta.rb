@@ -7,7 +7,7 @@ class CreatePregunta < ActiveRecord::Migration
       t.string :prg_tipo #numero (01 es pregunta con select como opcion de respuesta, 07 se puede escoger varias respuestas)
       t.string :prg_tipo_oblig #numero (1 es oblig. contestar esa pregunta, 2 no es obligatoria la pregunta)
       t.string :prg_txt #texto de la pregunta
-      t.string  :prg_ini #indica la posicion inicial de sus opciones en la cadena global de respuestas
+      t.string :prg_ini #indica la posicion inicial de sus opciones en la cadena global de respuestas
       t.string :prg_fin
 
       t.timestamps

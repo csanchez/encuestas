@@ -1,2 +1,1 @@
-.seccion
-	= render :partial => 'pregunta' , :collection => seccion.preguntas
+= render :partial => 'pregunta' , :collection => Pregunta.preguntas_por_cve_preg(seccion.cp_cst_cve_preg), :locals =>{:num => seccion.cp_cst_num_preg, :select => select}

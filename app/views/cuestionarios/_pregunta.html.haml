@@ -1,6 +1,21 @@
-.pregunta
-	= pregunta.prg_txt
-	- if pregunta.prg_tipo=="01"
-		= select_tag 'pregunta', options_from_collection_for_select(pregunta.opciones,:opc_cve_op, :opc_txt)
-	- else
-		= select_tag 'pregunta', :multiple, options_from_collection_for_select(pregunta.opciones,:opc_cve_op, :opc_txt)
+%tr{:id => "azulobscuro"}
+  %td{:align => "right"}
+    %font{:size=>"2"}
+      -case pregunta.prg_tipo
+      -when "02"
+      -	else
+        - if pregunta.prg_cve_subpreg == "000"
+          = num
+          = ".-"
+      =  raw(pregunta.prg_txt)+":"+raw("&nbsp;")
+    %td
+      %font{:size=>"2"}
+        - case pregunta.prg_tipo
+        - when "00"
+          = campo_fijo(pregunta.prg_cve_preg)
+        - when "01"
+          = select_tag pregunta.prg_cve_preg+"_"+pregunta.prg_ini+"_"+pregunta.prg_fin, options_from_collection_for_select(Opcion.opciones_por_cve_opcion(pregunta.prg_gpo_op),:opc_cve_op, :opc_txt,  :selected => select[pregunta.prg_cve_preg+"_"+pregunta.prg_ini+"_"+pregunta.prg_fin]), :obligatorio => pregunta.prg_tipo_oblig
+
+        - when "07" 
+          = select_tag pregunta.prg_cve_preg+"_"+pregunta.prg_ini+"_"+pregunta.prg_fin, options_from_collection_for_select(Opcion.opciones_por_cve_opcion(pregunta.prg_gpo_op),:opc_cve_op, :opc_txt,:selected => ["001","002"]), :multiple => true, :obligatorio => pregunta.prg_tipo_oblig
+        - when "02"

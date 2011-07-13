@@ -53,25 +53,23 @@ ActiveRecord::Schema.define(:version => 20110703001347) do
   end
 
   create_table "respuesta", :force => true do |t|
-    t.string   "resp_folio"
-    t.string   "resp_tipo_id"
-    t.string   "resp_cve_cst"
-    t.string   "resp_concurso"
-    t.string   "resp_periodo"
-    t.string   "resp_cve_preg"
-    t.string   "resp_cve_subpreg"
-    t.string   "resp_cve_op"
+    t.string   "enc_id"
+    t.string   "enc_tipo_id"
+    t.string   "enc_cve_cst"
+    t.string   "enc_concurso"
+    t.string   "enc_periodo"
+    t.string   "enc_resp"
+    t.string   "enc_sit"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "seccions", :force => true do |t|
-    t.string   "cp_cst_cve"
+    t.string   "cp_cst_cve_cst"
     t.string   "cp_cst_cve_preg"
     t.string   "cp_cst_gpo_preg"
     t.string   "cp_cst_num_preg"
     t.string   "cp_pos"
-    t.integer  "cuestionario_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

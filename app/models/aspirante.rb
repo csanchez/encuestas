@@ -1,5 +1,21 @@
 class Aspirante < ActiveRecord::Base
   
+  def tipo_ingreso
+    return "02"
+  end
+  
+  def sexo
+    return self.aspi_sexo
+  end
+  
+  def fec_nac
+    self.aspi_fec_nac
+  end
+  
+  def comprobante
+    self.aspi_folio
+  end
+  
   def nombre
     self.aspi_nombre.split('*')[2]
   end

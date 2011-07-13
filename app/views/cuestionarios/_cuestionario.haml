@@ -2,35 +2,5 @@
   %td{:width => "100%", :colspan => "3"}
     .titulosseccion{:align => "center"}
       %b 
-        = cuestionario.cst_txt
-
-%tr{:id => "azulobscuro"}
-  %td{:align => "center", :colspan => "2"}
-    %table{:border => "0"}
-      %tr{:id => "azulobscuro"}
-        %td{:width => "25%"}
-        %td{:width => "25%"} 
-          %b AP. PATERNO
-        %td{:width => "25%"} 
-          %b AP. MATERNO
-        %td{:width => "25%"}
-          %b NOMBRE(S)
-
-%tr{:id => "azulobscuro"}
-  %td{:align => "center", :colspan => "2"}
-    %table{:border => "0"}
-      %tr{:id => "azulobscuro"}
-        %td{:width => "25%"}
-          %b NOMBRE 
-        %td{:width => "25%"} 
-          %b
-            = session[:usuario].apellido_pat
-        %td{:width => "25%"} 
-          %b 
-            = session[:usuario].apellido_mat
-        %td{:width => "25%"}
-          %b
-            = session[:usuario].nombre
-
-
-= render :partial => 'seccion' , :collection => cuestionario.secciones
+        = raw(cuestionario.cst_txt)
+= render :partial => 'seccion' , :collection => Seccion.secciones_por_cst_y_gpo_preg(cuestionario.cst_cve,cuestionario.cst_gpo_preg), :locals => {:select => select}

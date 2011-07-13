@@ -1,0 +1,7 @@
+= render :partial => 'cuestionario_cabezera', :locals => {:cuestionario => @cuestionarios.first}
+- form_tag '/respuestas' do 
+  %table{:id => "preguntas"}
+    = render :partial => 'cuestionario', :collection => @cuestionarios[1..@cuestionarios.size-1] ,:locals => {:select => {}}
+  %hr
+  = submit_tag "Guardar Datos (Si no has concluido podrás hacerlo despues)" ,:id =>"commit"
+= link_to "salir" ,aspirante_session_path, :method => :delete
